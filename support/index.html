@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Clockroll Support</title>
+<meta name="description" content="Help with Clockroll: places, car beacons, car Bluetooth and CarPlay, exports.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;600&display=swap">
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../icon.png">
+</head>
+<body>
+<header><a class="brand" href="../"><img src="../icon.png" alt=""><span>Clockroll</span></a><a class="lang" href="da/">Dansk</a></header>
+<main>
+  <h1>Support</h1>
+  <p class="lede">Questions or something not working? Write to <a href="mailto:christian@sjobeckdigital.dk">christian@sjobeckdigital.dk</a>. A screenshot of Settings → Trigger Log helps a lot.</p>
+
+  <h2>Arrivals aren't logged</h2>
+  <ul>
+    <li>Location must be set to <strong>Always</strong> with <strong>Precise Location</strong> on: Settings → Clockroll → Location.</li>
+    <li>Give places a radius of 150 m or more. iOS notices arrivals within a minute or two, not to the second.</li>
+    <li>If you limited tracking to your work hours, arrivals outside your hours plus buffer aren't recorded. Arriving early still counts from when your window opens.</li>
+    <li>Low Power Mode can delay arrivals. They're still logged, a bit later.</li>
+  </ul>
+
+  <h2>Car: beacon</h2>
+  <p>Settings → Beacons → Add Beacon, with the beacon right next to your iPhone. Most beacons sold as “iBeacon” work. If yours isn't listed, enter its UUID, major and minor from the maker's app. Leaving the car is noticed after about 30–60 seconds.</p>
+
+  <h2>Car: Bluetooth or CarPlay</h2>
+  <ol>
+    <li>Open Shortcuts → Automation → +.</li>
+    <li>Choose Bluetooth (or CarPlay), pick your car, choose “Is Connected” and “Run Immediately”.</li>
+    <li>Add the action Clockroll → Car Connected and type the car's name.</li>
+    <li>Make a second automation with “Is Disconnected” and Clockroll → Car Disconnected.</li>
+  </ol>
+  <p>iOS shows a small banner when a Bluetooth automation runs. That comes from iOS and can't be turned off.</p>
+
+  <h2>Exports</h2>
+  <p>History → Export. Daily totals (CSV) is what Danish employers need to keep under the working-time rules. Only confirmed work is exported; personal drives never are.</p>
+
+  <h2>Clockroll Pro</h2>
+  <p>A one-time purchase, shared with your family through Family Sharing. On a new iPhone, use Settings → Restore Purchases.</p>
+</main>
+<footer>© 2026 Christian Sjøbeck · <a href="../privacy/">Privacy</a></footer>
+</body>
+</html>
