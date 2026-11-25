@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Clockroll Support (dansk)</title>
+<meta name="description" content="Hjælp til Clockroll: steder, beacons i bilen, bilens Bluetooth og CarPlay, eksport.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;600&display=swap">
+<link rel="stylesheet" href="../../style.css">
+<link rel="icon" href="../../icon.png">
+</head>
+<body>
+<header><a class="brand" href="../../"><img src="../../icon.png" alt=""><span>Clockroll</span></a><a class="lang" href="../">English</a></header>
+<main>
+  <h1>Support</h1>
+  <p class="lede">Spørgsmål, eller virker noget ikke? Skriv til <a href="mailto:christian@sjobeckdigital.dk">christian@sjobeckdigital.dk</a>. Et skærmbillede af Indstillinger → Udløserlog hjælper meget.</p>
+
+  <h2>Ankomster registreres ikke</h2>
+  <ul>
+    <li>Lokalitet skal stå til <strong>Altid</strong> med <strong>Præcis lokalitet</strong> slået til: Indstillinger → Clockroll → Lokalitet.</li>
+    <li>Giv stederne en radius på 150 m eller mere. iOS opdager ankomster inden for et minut eller to, ikke på sekundet.</li>
+    <li>Har du begrænset registreringen til din arbejdstid, registreres ankomster uden for arbejdstid plus buffer ikke. Møder du tidligt, tæller det fra det tidspunkt, hvor dit vindue åbner.</li>
+    <li>Strømsparetilstand kan forsinke ankomster. De registreres stadig, bare lidt senere.</li>
+  </ul>
+
+  <h2>Bil: beacon</h2>
+  <p>Indstillinger → Beacons → Tilføj beacon, med beaconen lige ved siden af din iPhone. De fleste beacons, der sælges som “iBeacon”, virker. Står din ikke på listen, så indtast UUID, major og minor fra producentens app. At du forlader bilen opdages efter ca. 30–60 sekunder.</p>
+
+  <h2>Bil: Bluetooth eller CarPlay</h2>
+  <ol>
+    <li>Åbn Genveje → Automatisering → +.</li>
+    <li>Vælg Bluetooth (eller CarPlay), vælg din bil, vælg “Er tilsluttet” og “Kør med det samme”.</li>
+    <li>Tilføj handlingen Clockroll → Bil tilsluttet, og skriv bilens navn.</li>
+    <li>Lav en automatisering mere med “Er afbrudt” og Clockroll → Bil afbrudt.</li>
+  </ol>
+  <p>iOS viser et lille banner, når en Bluetooth-automatisering kører. Det kommer fra iOS og kan ikke slås fra.</p>
+
+  <h2>Eksport</h2>
+  <p>Historik → Eksporter. Daglige totaler (CSV) er det, arbejdsgivere skal registrere efter arbejdstidsloven. Kun godkendt arbejde eksporteres; private kørsler aldrig.</p>
+
+  <h2>Clockroll Pro</h2>
+  <p>Et engangskøb, som deles med familien via Familiedeling. På en ny iPhone: Indstillinger → Gendan køb.</p>
+
+  <h2>Privatliv</h2>
+  <p>Clockroll indsamler ingen data. Lokalitet, kørsler og timer behandles og gemmes kun på din iPhone. Læs hele <a href="../../privacy/">privatlivspolitikken</a> (på engelsk).</p>
+</main>
+<footer>© 2026 Christian Sjøbeck · <a href="../../privacy/">Privatliv</a></footer>
+</body>
+</html>
